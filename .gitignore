@@ -7,4 +7,13 @@
 **/.vercel/
 **/.local-db/
 **/coverage/
-**/*.tsbuildinfo
+**/*.tsbuildinfoluxuswand/.env
+luxuswand/.env.*
+!luxuswand/.env.example
+luxuswand/node_modules/
+luxuswand/.next/
+luxuswand/.next-e2e/
+luxuswand/.vercel/
+luxuswand/.local-db/
+luxuswand/coverage/
+luxuswand/*.tsbuildinfo
