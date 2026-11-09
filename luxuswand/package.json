@@ -1,0 +1,37 @@
+{
+  "name": "luxuswand",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "next typegen && tsc --noEmit",
+    "local:db": "bash scripts/local-db/start.sh",
+    "local:db:stop": "bash scripts/local-db/stop.sh",
+    "test:e2e": "node scripts/e2e-local.mjs",
+    "test:timeline": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/test-timeline.mjs",
+    "images": "node scripts/images/build-photos.mjs"
+  },
+  "dependencies": {
+    "@google/model-viewer": "4.3.1",
+    "@supabase/supabase-js": "^2.117.3",
+    "next": "16.4.3",
+    "qrcode-generator": "2.0.4",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "stripe": "^23.0.0",
+    "three": "0.183.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/turbopack": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.3",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
